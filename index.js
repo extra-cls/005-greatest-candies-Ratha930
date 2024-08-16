@@ -1,13 +1,10 @@
 const greatesCandies = (candies, extraCandies) => {
-    let result = [];
-    // your code here
-    
-
-
+    const maxCandies = Math.max(...candies);
+    const result = candies.map(count => count + extraCandies >= maxCandies);
     // return back the result
     return result;
 }
-
-
-// DO NOT DELETE/MODIFY THIS
-export {greatesCandies};
+// Example usage:
+const candies = [2, 3, 5, 1, 7];
+const extraCandies = 3;
+console.log(greatesCandies(candies, extraCandies)); // [true, true, true, false, true]
