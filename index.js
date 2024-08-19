@@ -4,6 +4,8 @@ const greatesCandies = (candies, extraCandies) => {
     // return back the result
     return result;
 }
+// DO NOT DELETE/MODIFY THIS
+export {greatesCandies};
 // Example usage:
 const candies = [2, 3, 5, 1, 7];
 const extraCandies = 3;
